@@ -88,6 +88,10 @@ body {
     top: 20px;
     right: 20px;
   }
+  .container {
+    top: 20px;
+    right: 20px;
+  }
 }
 
 @media (min-width: 768px) {
