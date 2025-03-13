@@ -54,7 +54,7 @@ export default function Home() {
         </motion.div>
 
         <div className={styles.body}>
-          <p>I'm a <span>selectively skilled</span> product designer with a strong focus on
+          <p>I&apos;m a <span>selectively skilled</span> product designer with a strong focus on
             producing high-quality & impactful digital experiences.
           </p>
         </div>
