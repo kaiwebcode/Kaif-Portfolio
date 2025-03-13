@@ -1,7 +1,7 @@
 "use client";
 
 import styles from './page.module.scss'
-import { useEffect, useState } from 'react';  
+import { useEffect, useState } from 'react';
 import { motion } from 'framer-motion';
 import useMousePosition from './utills/useMousePosition';
 // import useMousePosition from './utils/useMousePosition';
@@ -33,35 +33,37 @@ export default function Home() {
 
   return (
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 pb-1 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-      <main className="flex flex-col gap-6 row-start-2 items-center ">
-        <main className={styles.main}>
+    <main className="flex flex-col gap-6 row-start-2 items-center ">
+      <main className={styles.main}>
         {/* <h1 className="text-4xl lg:text-5xl text-white mix-blend-difference font-bold flex flex-col text-center items-center justify-center">
           Kai-Portfolio
         </h1> */}
 
-          <motion.div
-            className={styles.mask}
-            animate={{
-              WebkitMaskPosition: `${(x ?? 0) - size / 2}px ${(y ?? 0) - size / 2}px`,
-              WebkitMaskSize: `${size}px`,
-            }}
-            transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
-          >
+        <motion.div
+          className={styles.mask}
+          animate={{
+            WebkitMaskPosition: `${(x ?? 0) - size / 2}px ${(y ?? 0) - size / 2}px`,
+            WebkitMaskSize: `${size}px`,
+          }}
+          transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
+        >
+          <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
+            A visual designer - with skills that haven&apos;t been replaced by A.I (yet) - making good
+            shit only if the paycheck is equally good.
+          </p>
+        </motion.div>
 
-            <p onMouseEnter={() => { setIsHovered(true) }} onMouseLeave={() => { setIsHovered(false) }}>
-              A visual designer - with skills that haven't been replaced by A.I (yet) - making good shit only if the paycheck is equally good.
-            </p>
+        <div className={styles.body}>
+          <p>I'm a <span>selectively skilled</span> product designer with a strong focus on
+            producing high-quality & impactful digital experiences.
+          </p>
+        </div>
 
-          </motion.div>
-          <div className={styles.body}>
-            <p>I'm a <span>selectively skilled</span> product designer with strong focus on producing high quality & impactful digital experience.</p>
-          </div>
-
-        </main>
-        {/* <h2 className="text-white mix-blend-difference" >
+      </main>
+      {/* <h2 className="text-white mix-blend-difference" >
           Yooo
         </h2> */}
-      </main>
+    </main>
     // </div>
   );
 }

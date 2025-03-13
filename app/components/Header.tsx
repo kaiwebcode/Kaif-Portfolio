@@ -1,7 +1,6 @@
 "use client";
 
 import React from "react";
-import { BiMenu } from "react-icons/bi";
 import { Sheet, SheetContent, SheetTrigger, SheetTitle } from "@/components/ui/sheet";
 import { Button } from "@/components/ui/button";
 import Link from "next/link";
