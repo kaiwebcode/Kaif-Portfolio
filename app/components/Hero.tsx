@@ -3,7 +3,7 @@ import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
 import CustomButton from "./CustomButton"; 
-import Coder from "../../assets/coder.svg";
+import Coder from "../../public/assets/coder.svg";
 
 function Hero() {
   const textRef = useRef<HTMLHeadingElement | null>(null);

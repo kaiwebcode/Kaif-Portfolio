@@ -5,17 +5,17 @@ import { fadeIn, textVariant } from "../utills/motion";
 import { styles } from "../utills/styles";
 import { services } from "../utills";
 import SectionWrapper from "../hoc/SectionWrapper";
-import Image, { StaticImageData } from "next/image";
+import Image from "next/image";
 
 // ServiceCard Props Interface
 interface ServiceCardProps {
   index: number;
   title: string;
-  icon: StaticImageData; // Ensuring StaticImageData type
+  icon: string; // Ensuring StaticImageData type
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ index, title, icon }) => {
-  console.log("Service Icon:", icon); // Debugging
+  // console.log("Service Icon:", icon); // Debugging
 
   return (
     <Tilt className="xs:w-[200px] w-[500px] text-white mix-blend-difference">

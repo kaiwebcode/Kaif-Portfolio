@@ -23,7 +23,7 @@ import {
     // jobit,
     // tripguide,
     // threejs,
-  } from "../../assets/web.png";
+  } from "../../public/assets/web.png";
   
 //   export const navLinks = [
 //     {
@@ -40,29 +40,30 @@ import {
 //     },
 //   ];
 
-import mobile from "../../assets/mobile.png";
-import backend from "../../assets/backend.png";
-import creator from "../../assets/creator.png";
-import web from "../../assets/web.png"; 
+// import mobile from "../../public/assets/mobile.png";
+// import backend from "../../public/assets/backend.png";
+// import creator from "../../public/assets/creator.png";
+// import web from "../../public/assets/web.png"; 
   
-  const services = [
-    {
-      title: "Full Stack Developer",
-      icon: web,
-    },
-    {
-      title: "frontend Developer",
-      icon: mobile,
-    },
-    {
-      title: "Backend Developer",
-      icon: backend,
-    },
-    {
-      title: "Content Creator",
-      icon: creator,
-    },
-  ];
+const services = [
+  {
+    title: "Full Stack Developer",
+    icon: "/assets/web.png", // ✅ Use relative path from public/
+  },
+  {
+    title: "Frontend Developer",
+    icon: "/assets/mobile.png",
+  },
+  {
+    title: "Backend Developer",
+    icon: "/assets/backend.png",
+  },
+  {
+    title: "Content Creator",
+    icon: "/assets/creator.png",
+  },
+];
+
   
 //   const technologies = [
 //     {
