@@ -18,7 +18,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ index, title, icon }) => {
   // console.log("Service Icon:", icon); // Debugging
 
   return (
-    <Tilt className="xs:w-[200px] w-[500px] text-white mix-blend-difference">
+    <Tilt  tiltMaxAngleX={15} tiltMaxAngleY={15} className="xs:w-[200px] w-[500px] text-white mix-blend-difference">
     <motion.div
       variants={fadeIn("right", "spring", index * 0.5, 0.75)}
       className="w-full p-[2px] rounded-2xl shadow-lg bg-gradient-to-r from-white-400 to-slate-400"
