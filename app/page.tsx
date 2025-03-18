@@ -2,7 +2,7 @@
 
 import { useEffect } from 'react';
 import Hero from "./components/Hero"
-import AnimationDes from "./components/animationDes"
+import About from './components/About';
 
 export default function Home() {
 
@@ -35,8 +35,8 @@ export default function Home() {
 
           
         <Hero />
-        <AnimationDes />
-
+        {/* <AnimationDes /> */}
+        <About />
 
       {/* </main> */}
       {/* <h2 className="text-white mix-blend-difference" >
