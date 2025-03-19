@@ -3,6 +3,8 @@
 import { useEffect } from 'react';
 import Hero from "./components/Hero"
 import About from './components/About';
+import Experience from './components/Experience';
+import Tech from './components/Tech';
 
 export default function Home() {
 
@@ -37,6 +39,10 @@ export default function Home() {
         <Hero />
         {/* <AnimationDes /> */}
         <About />
+
+        <Experience />
+
+        <Tech />
 
       {/* </main> */}
       {/* <h2 className="text-white mix-blend-difference" >

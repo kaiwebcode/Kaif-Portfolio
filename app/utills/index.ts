@@ -1,30 +1,29 @@
-import {
-    // mobile,
-    // backend,
-    // creator,
-    // web,
-    // javascript,
-    // typescript,
-    // html,
-    // css,
-    // reactjs,
-    // redux,
-    // tailwind,
-    // nodejs,
-    // mongodb,
-    // git,
-    // figma,
-    // docker,
-    // meta,
-    // starbucks,
-    // tesla,
-    // shopify,
-    // carrent,
-    // jobit,
-    // tripguide,
-    // threejs,
-  } from "../../public/assets/web.png";
-  
+import // mobile,
+// backend,
+// creator,
+// web,
+// javascript,
+// typescript,
+// html,
+// css,
+// reactjs,
+// redux,
+// tailwind,
+// nodejs,
+// mongodb,
+// git,
+// figma,
+// docker,
+// meta,
+// starbucks,
+// tesla,
+// shopify,
+// carrent,
+// jobit,
+// tripguide,
+// threejs,
+"../../public/assets/web.png";
+
 //   export const navLinks = [
 //     {
 //       id: "about",
@@ -43,8 +42,8 @@ import {
 // import mobile from "../../public/assets/mobile.png";
 // import backend from "../../public/assets/backend.png";
 // import creator from "../../public/assets/creator.png";
-// import web from "../../public/assets/web.png"; 
-  
+// import web from "../../public/assets/web.png";
+
 const services = [
   {
     title: "Full Stack Developer",
@@ -64,117 +63,112 @@ const services = [
   },
 ];
 
-  
-//   const technologies = [
-//     {
-//       name: "HTML 5",
-//       icon: html,
-//     },
-//     {
-//       name: "CSS 3",
-//       icon: css,
-//     },
-//     {
-//       name: "JavaScript",
-//       icon: javascript,
-//     },
-//     {
-//       name: "TypeScript",
-//       icon: typescript,
-//     },
-//     {
-//       name: "React JS",
-//       icon: reactjs,
-//     },
-//     {
-//       name: "Redux Toolkit",
-//       icon: redux,
-//     },
-//     {
-//       name: "Tailwind CSS",
-//       icon: tailwind,
-//     },
-//     {
-//       name: "Node JS",
-//       icon: nodejs,
-//     },
-//     {
-//       name: "MongoDB",
-//       icon: mongodb,
-//     },
-//     {
-//       name: "Three JS",
-//       icon: threejs,
-//     },
-//     {
-//       name: "git",
-//       icon: git,
-//     },
-//     {
-//       name: "figma",
-//       icon: figma,
-//     },
-//     {
-//       name: "docker",
-//       icon: docker,
-//     },
-//   ];
-  
-//   const experiences = [
-//     {
-//       title: "React.js Developer",
-//       company_name: "Starbucks",
-//       icon: starbucks,
-//       iconBg: "#383E56",
-//       date: "March 2020 - April 2021",
-//       points: [
-//         "Developing and maintaining web applications using React.js and other related technologies.",
-//         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//         "Implementing responsive design and ensuring cross-browser compatibility.",
-//         "Participating in code reviews and providing constructive feedback to other developers.",
-//       ],
-//     },
-//     {
-//       title: "React Native Developer",
-//       company_name: "Tesla",
-//       icon: tesla,
-//       iconBg: "#E6DEDD",
-//       date: "Jan 2021 - Feb 2022",
-//       points: [
-//         "Developing and maintaining web applications using React.js and other related technologies.",
-//         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//         "Implementing responsive design and ensuring cross-browser compatibility.",
-//         "Participating in code reviews and providing constructive feedback to other developers.",
-//       ],
-//     },
-//     {
-//       title: "Web Developer",
-//       company_name: "Shopify",
-//       icon: shopify,
-//       iconBg: "#383E56",
-//       date: "Jan 2022 - Jan 2023",
-//       points: [
-//         "Developing and maintaining web applications using React.js and other related technologies.",
-//         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//         "Implementing responsive design and ensuring cross-browser compatibility.",
-//         "Participating in code reviews and providing constructive feedback to other developers.",
-//       ],
-//     },
-//     {
-//       title: "Full stack Developer",
-//       company_name: "Meta",
-//       icon: meta,
-//       iconBg: "#E6DEDD",
-//       date: "Jan 2023 - Present",
-//       points: [
-//         "Developing and maintaining web applications using React.js and other related technologies.",
-//         "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-//         "Implementing responsive design and ensuring cross-browser compatibility.",
-//         "Participating in code reviews and providing constructive feedback to other developers.",
-//       ],
-//     },
-//   ];
-  
+const technologies = [
+  {
+    name: "HTML 5",
+    icon: "/assets/html.png",
+  },
+  {
+    name: "CSS 3",
+    icon: "/assets/css.png",
+  },
+  {
+    name: "JavaScript",
+    icon: "/assets/javascript.png",
+  },
+  {
+    name: "TypeScript",
+    icon: "/assets/typescript.png",
+  },
+  {
+    name: "React JS",
+    icon: "/assets/reactjs.png",
+  },
+  {
+    name: "Redux Toolkit",
+    icon: "/assets/redux.png",
+  },
+  {
+    name: "Tailwind CSS",
+    icon: "/assets/tailwind.png",
+  },
+  {
+    name: "Node JS",
+    icon: "/assets/nodejs.png",
+  },
+  {
+    name: "MongoDB",
+    icon: "/assets/mongodb.png",
+  },
+  {
+    name: "git",
+    icon: "/assets/git.png",
+  },
+  {
+    name: "figma",
+    icon: "/assets/figma.png",
+  },
+  {
+    name: "docker",
+    icon: "/assets/docker.png",
+  },
+];
+
+const experiences = [
+  {
+    title: "React.js Developer",
+    company_name: "Starbucks",
+    icon: "/assets/starbucks.png", // ✅ FIXED
+    iconBg: "#383E56",
+    date: "March 2020 - April 2021",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "React Native Developer",
+    company_name: "Tesla",
+    icon: "/assets/tesla.png", // ✅ FIXED
+    iconBg: "#E6DEDD",
+    date: "Jan 2021 - Feb 2022",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Web Developer",
+    company_name: "Shopify",
+    icon: "/assets/shopify.png", // ✅ FIXED
+    iconBg: "#383E56",
+    date: "Jan 2022 - Jan 2023",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+  {
+    title: "Full stack Developer",
+    company_name: "Meta",
+    icon: "/assets/meta.png", // ✅ FIXED
+    iconBg: "#E6DEDD",
+    date: "Jan 2023 - Present",
+    points: [
+      "Developing and maintaining web applications using React.js and other related technologies.",
+      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
+      "Implementing responsive design and ensuring cross-browser compatibility.",
+      "Participating in code reviews and providing constructive feedback to other developers.",
+    ],
+  },
+];
+
 //   const testimonials = [
 //     {
 //       testimonial:
@@ -201,7 +195,7 @@ const services = [
 //       image: "https://randomuser.me/api/portraits/women/6.jpg",
 //     },
 //   ];
-  
+
 //   const projects = [
 //     {
 //       name: "Car Rent",
@@ -267,11 +261,11 @@ const services = [
 //       source_code_link: "https://github.com/",
 //     },
 //   ];
-  
-  export { 
-    services, 
-    // technologies,
-    //  experiences,
-    //   testimonials,
-    //    projects 
-    };
+
+export {
+  services,
+  technologies,
+  experiences,
+  //   testimonials,
+  //    projects
+};
