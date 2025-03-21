@@ -57,7 +57,7 @@ const ProjectCard = ({
                 <div className="flex gap-2">
                     <div
                         onClick={() => window.open(source_code_link, "_blank")}
-                        className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border mt-3 hover:bg-slate-500"
+                        className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border mt-3 hover:bg-black "
                     >
                         <Image
                             src={github}
@@ -69,7 +69,7 @@ const ProjectCard = ({
                     </div>
                     <div
                         onClick={() => window.open(projects_link, "_blank")}
-                        className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border mt-3 hover:bg-slate-500"
+                        className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border mt-3 hover:bg-black"
                     >
                         <Image
                             src={rocketLaunch}
