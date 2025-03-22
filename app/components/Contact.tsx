@@ -6,7 +6,6 @@ import { styles } from "../utills/styles";
 import { slideIn } from "../utills/motion";
 import SectionWrapper from "../../app/hoc/SectionWrapper";
 
-
 // Dynamically import EarthCanvas to prevent SSR issues
 // const EarthCanvas = dynamic(() => import("./canvas/Earth"), { ssr: false });
 
@@ -45,7 +44,7 @@ const Contact = () => {
     };
 
     return (
-        <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden">
+        <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden z-50">
             <motion.div
                 variants={slideIn("left", "tween", 0.2, 1)}
                 className="flex-[0.75] bg-slate-900 p-6 lg:p-8 rounded-2xl"
@@ -103,14 +102,14 @@ const Contact = () => {
             </motion.div>
 
             {/* <motion.div
-        variants={slideIn("right", "tween", 0.2, 1)}
-        className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-      >
-        {/* Ensure EarthCanvas renders only on client */}
-            {/* {typeof window !== "undefined" && <EarthCanvas />}
-    //   </motion.div> */}
+                variants={slideIn("right", "tween", 0.2, 1)}
+                className="xl:flex-1 xl:h-auto md:h-[550px] h-[350px]"
+                initial={{ opacity: 0 }}
+                animate={{ opacity: 1 }}
+            >
+                Ensure EarthCanvas renders only on client
+                {typeof window !== "undefined" && <EarthCanvas />}
+            </motion.div> */}
         </div>
     );
 };

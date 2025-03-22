@@ -7,6 +7,7 @@ import Experience from './components/Experience';
 import Works from './components/Works';
 import Feedbacks from './components/Feedbacks';
 import Contact from './components/Contact';
+import StarsCanvas from './components/canvas/Stars';
 
 export default function Home() {
 
@@ -31,26 +32,31 @@ export default function Home() {
 
   return (
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 pb-1 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    <main className="mt-20 gap-1 items-center h-screen">
+    <main className="mt-20 gap-1 items-center h-screen bg-zinc-950">
       {/* <main className={styles.main}> */}
-        {/* <h1 className="text-4xl lg:text-5xl text-white mix-blend-difference font-bold flex flex-col text-center items-center justify-center">
+      {/* <h1 className="text-4xl lg:text-5xl text-white mix-blend-difference font-bold flex flex-col text-center items-center justify-center">
           Kai-Portfolio
         </h1> */}
 
-          
+      {/* <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'> */}
         <Hero />
-        {/* <AnimationDes /> */}
-        <About />
+      {/* </div> */}
+      {/* <AnimationDes /> */}
+      <About />
 
-        <Experience />
+      <Experience />
 
-        {/* <Tech /> */}
+      {/* <Tech /> */}
 
-        <Works />
+      <Works />
 
-        <Feedbacks />
+      <Feedbacks />
 
+      <div className='relative z-0'>
         <Contact />
+        <StarsCanvas />
+      </div>
+
 
       {/* </main> */}
       {/* <h2 className="text-white mix-blend-difference" >

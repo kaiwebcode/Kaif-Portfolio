@@ -2,7 +2,7 @@ import Image from "next/image";
 import React, { useEffect, useRef } from "react";
 import { gsap } from "gsap";
 import { motion } from "framer-motion";
-import CustomButton from "./CustomButton"; 
+import CustomButton from "./CustomButton";
 import Coder from "../../public/assets/coder.svg";
 
 function Hero() {
@@ -21,7 +21,10 @@ function Hero() {
   return (
     <section className="text-white mix-blend-difference py-10 lg:py-48">
       <div className="flex flex-col-reverse lg:flex-row items-center gap-12 px-6 mx-auto lg:gap-16 xl:max-w-7xl">
-        
+        {/* <div className="flex flex-col justify-center items-center mt-5">
+          <div className="w-5 h-5 rounded-full bg-[#915eff]" />
+          <div className="w-1 sm:h-80 h-20 bg-violet-500 rounded-b-4xl" />
+        </div> */}
         {/* Left Section - Text */}
         <motion.div
           initial={{ opacity: 0, x: -50 }}
@@ -59,7 +62,7 @@ function Hero() {
           {/* Call to Action Buttons */}
           <div className="mt-8 flex items-center justify-center lg:justify-start gap-4">
             {/* <CustomButton text="Hire Me" /> */}
-            <CustomButton text="View Work"/>
+            <CustomButton text="View Work" />
           </div>
         </motion.div>
 
@@ -72,24 +75,24 @@ function Hero() {
           <figure className="relative w-full max-w-md mx-auto lg:max-w-3xl bg-gradient-to-t from-sky-500/60 via-sky-400/40 to-transparent rounded-[50px] overflow-hidden shadow-lg">
             <Image src={Coder} width={700} height={800} alt="Coder Image" className="w-full" />
           </figure>
-        <div className='absolute xs:bottom-10 bottom-32 flex justify-center items-center'>
-        <a href='#about'>
-          <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
-            <motion.div
-              animate={{
-                y: [0, 24, 0],
-              }}
-              transition={{
-                duration: 1.5,
-                repeat: Infinity,
-                repeatType: "loop",
-              }}
-              className='w-3 h-3 rounded-full bg-slate-300 mb-1'
-            />
+          <div className='absolute xs:bottom-10 bottom-32 flex justify-center items-center'>
+            <a href='#about'>
+              <div className='w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2'>
+                <motion.div
+                  animate={{
+                    y: [0, 24, 0],
+                  }}
+                  transition={{
+                    duration: 1.5,
+                    repeat: Infinity,
+                    repeatType: "loop",
+                  }}
+                  className='w-3 h-3 rounded-full bg-slate-300 mb-1'
+                />
+              </div>
+            </a>
           </div>
-        </a>
-      </div>
-                </motion.div>
+        </motion.div>
 
       </div>
     </section>
