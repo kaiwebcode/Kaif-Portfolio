@@ -36,7 +36,7 @@ const ProjectCard = ({
                 tiltMaxAngleY={45}
                 scale={1}
                 transitionSpeed={450}
-                className="bg-slate-800 p-4 rounded-2xl sm:w-[360px] w-full"
+                className="bg-zinc-800 p-4 rounded-2xl sm:w-[360px] w-full"
             >
                 <div className="relative w-full h-[230px]">
                     <Image

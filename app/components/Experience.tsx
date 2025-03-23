@@ -25,7 +25,7 @@ const ExperienceCard = ({ experience }: { experience: ExperienceType }) => {
     return (
         <VerticalTimelineElement
             contentStyle={{
-                background: "#1d1836",
+                background: "#1d1820",
                 color: "#fff",
             }}
             contentArrowStyle={{ borderRight: "15px solid  #232631" }}
@@ -38,7 +38,7 @@ const ExperienceCard = ({ experience }: { experience: ExperienceType }) => {
                         alt={experience.company_name}
                         width={60} // Adjust size as needed
                         height={60} // Adjust size as needed
-                        className='w-[60%] h-[60%] object-contain'
+                        className='w-[60%] h-[60%] object-contain text-white'
                     />
                 </div>
             }

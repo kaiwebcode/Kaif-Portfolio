@@ -25,7 +25,7 @@ const FeedbackCard = ({
 }: Types) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-    className="bg-slate-700 p-6 rounded-3xl xs:w-[320px] w-full"
+    className="bg-zinc-700 p-6 rounded-3xl xs:w-[320px] w-full"
   >
     <p className="text-white font-black text-[48px]">&quot;</p>
 
@@ -56,8 +56,8 @@ const FeedbackCard = ({
 
 const Feedbacks = () => {
   return (
-    <div className="mt-8 bg-slate-800 rounded-[20px]">
-      <div className={`bg-slate-900 border-b-2 rounded-2xl ${styles.padding} min-h-[300px]`}>
+    <div className="mt-8 bg-zinc-800 rounded-[20px]">
+      <div className={`bg-zinc-900 border-b-2 rounded-2xl ${styles.padding} min-h-[300px]`}>
         <motion.div variants={textVariant(0.1)}>
           <p className={styles.sectionSubText}>What others say</p>
           <h2 className={styles.sectionHeadText}>Testimonials.</h2>

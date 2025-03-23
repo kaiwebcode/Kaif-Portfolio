@@ -32,7 +32,7 @@ export default function Home() {
 
   return (
     // <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-4 pb-1 gap-16 sm:p-20 font-[family-name:var(--font-geist-sans)]">
-    <main className="mt-20 gap-1 items-center h-screen bg-zinc-950">
+    <main className="mt-12 gap-1 items-center h-screen text-white mix-blend-difference bg-zinc-950">
       {/* <main className={styles.main}> */}
       {/* <h1 className="text-4xl lg:text-5xl text-white mix-blend-difference font-bold flex flex-col text-center items-center justify-center">
           Kai-Portfolio
