@@ -8,6 +8,7 @@ import Works from './components/Works';
 import Feedbacks from './components/Feedbacks';
 import Contact from './components/Contact';
 import StarsCanvas from './components/canvas/Stars';
+import Footer from './components/Footer';
 
 export default function Home() {
 
@@ -57,7 +58,7 @@ export default function Home() {
         <StarsCanvas />
       </div>
 
-
+        <Footer />
       {/* </main> */}
       {/* <h2 className="text-white mix-blend-difference" >
           Yooo
