@@ -25,14 +25,14 @@ const FeedbackCard = ({
 }: Types) => (
   <motion.div
     variants={fadeIn("up", "spring", index * 0.5, 0.75)}
-    className="bg-zinc-700 p-6 rounded-3xl xs:w-[320px] w-full"
+    className="bg-zinc-700 p-6 rounded-3xl xs:w-[320px] w-full reveal-up"
   >
     <p className="text-white font-black text-[48px]">&quot;</p>
 
     <div className="mt-1">
       <p className="text-white tracking-wider text-[18px]">{testimonial}</p>
 
-      <div className="mt-7 flex justify-between items-center gap-1">
+      <div className="mt-7 flex justify-between items-center gap-1 ">
         <div className="flex-1 flex flex-col">
           <p className="text-white font-medium text-[16px]">
             <span className="blue-text-gradient">@</span> {name}

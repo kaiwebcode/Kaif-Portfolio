@@ -11,7 +11,7 @@ import Image from "next/image";
 interface ServiceCardProps {
   index: number;
   title: string;
-  icon: string; // Ensuring StaticImageData type
+  icon: string;
 }
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ index, title, icon }) => {
@@ -42,7 +42,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <div className="py-20 text-white text-center">
+    <div className="py-20 text-white text-center reveal-up">
       <motion.div variants={textVariant(0)}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -50,7 +50,7 @@ const About = () => {
 
       <motion.p
         variants={fadeIn("up", "tween", 0.1, 1)}
-        className="mt-4 text-white text-[17px] max-w-3xl mx-auto leading-[30px]"
+        className="mt-4 text-white text-[17px] max-w-3xl mx-auto leading-[30px] reveal-up"
       >
         I&apos;m a skilled software developer with experience in TypeScript and
         JavaScript, and expertise in frameworks like React, Node.js, and

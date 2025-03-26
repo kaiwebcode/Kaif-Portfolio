@@ -9,11 +9,11 @@ type Props = object; // Fixed empty object type issue
 
 const Footer = ({}: Props) => {
     return (
-        <footer className="text-white mix-blend-difference bg-zinc-800 pb-4 border border-[#0000000e] dark:border-[#ffffff1e] mt-6">
+        <footer className="text-white mix-blend-difference bg-zinc-800 pb-4 border border-[#0000000e] dark:border-[#ffffff1e] mt-6 ">
             <div className="pt-11" />
             <br />
-            <div className="w-[95%] 800px:w-full 800px:max-w-[85%] mx-auto px-2 sm:px-6 lg:px-8">
-                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4">
+            <div className="w-[95%] 800px:w-full 800px:max-w-[85%] mx-auto px-2 sm:px-6 lg:px-8 reveal-up">
+                <div className="grid grid-cols-1 gap-8 sm:grid-cols-2 md:grid-cols-4 ">
                     {/* Quick Links */}
                     <div className="space-y-3">
                         <h3 className="text-[28px] font-[700] text-white">Quick Links</h3>

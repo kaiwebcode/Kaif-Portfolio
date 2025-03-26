@@ -18,7 +18,7 @@ const Contact = () => {
 
 
     return (
-        <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden z-50">
+        <div className="xl:mt-12 flex xl:flex-row flex-col-reverse gap-10 overflow-hidden z-50 reveal-up">
             <motion.div
                 variants={slideIn("left", "tween", 0.2, 1)}
                 className="flex-[0.75] bg-zinc-900 p-6 lg:p-8 rounded-2xl shadow-lg"
@@ -77,10 +77,16 @@ const Contact = () => {
 
             <motion.div
                 variants={slideIn("right", "tween", 0.2, 1)}
-                className="xl:flex-1 xl:h-auto md:h-[650px] h-[600px] flex items-center justify-center"
+                className="xl:flex-1 xl:h-auto md:h-[650px] h-[600px] text-center flex items-center justify-between"
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
             >
+                {/* <h2 className={styles.heroSubText}>Contact me for collaboration</h2> */}
+
+                {/* <p>
+                    Reach out today to discuss your project needs and start collabrating on something amazing!
+                </p> */}
+
                 <Image src={contactUs} alt="Contact Us" width={600} height={600} className="w-full max-w-xl md:max-w-2xl xl:max-w-3xl" />
             </motion.div>
         </div>

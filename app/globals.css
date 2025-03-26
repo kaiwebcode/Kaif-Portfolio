@@ -119,6 +119,9 @@ input::-webkit-inner-spin-button {
   color: black;
 } */
 
+.reveal-up {
+  @apply translate-y-2 opacity-0
+}
 
 @media screen and (max-width: 600px) {
   .dark-mode {

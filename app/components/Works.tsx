@@ -38,7 +38,7 @@ const ProjectCard = ({
                 transitionSpeed={450}
                 className="bg-zinc-800 p-4 rounded-2xl sm:w-[360px] w-full"
             >
-                <div className="relative w-full h-[230px]">
+                <div className="relative w-full h-[230px] reveal-up">
                     <Image
                         src={image}
                         alt="project_image"
@@ -101,7 +101,7 @@ const Works = () => {
                 <h2 className={`${styles.sectionHeadText}`}>Projects.</h2>
             </motion.div>
 
-            <div className="w-full flex">
+            <div className="w-full flex reveal-up">
                 <motion.p
                     variants={fadeIn("up", "spring", 0.1, 1)}
                     className="mt-3 text-secondary text-[17px] max-w-3xl leading-[30px]"
@@ -122,4 +122,4 @@ const Works = () => {
     );
 };
 
-export default SectionWrapper(Works, "");
+export default SectionWrapper(Works, "projects");
