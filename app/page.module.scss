@@ -6,6 +6,7 @@
   justify-content: center;
   text-align: center;
   padding: 20px;
+  border: 1px solid gray;
 
   .mask,
   .body {
@@ -31,7 +32,7 @@
   }
 
   .mask {
-    mask-image: url("../assets/mask.svg");
+    mask-image: url("../public/assets/mask.svg");
     mask-repeat: no-repeat;
     mask-size: 10px;
     background: #ec4e39;

@@ -12,6 +12,7 @@ import Footer from './components/Footer';
 import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { useGSAP } from '@gsap/react';
+import Animation from './components/animationDes';
 
 gsap.registerPlugin(useGSAP, ScrollTrigger);
 
@@ -44,6 +45,7 @@ export default function Home() {
         scrollTrigger: {
           trigger: element,
           // start: '-100 bottom',
+          end: 'bottom 80%',
           scrub: true,
           // markers: true
         },
@@ -68,8 +70,8 @@ export default function Home() {
       {/* <div className='bg-hero-pattern bg-cover bg-no-repeat bg-center'> */}
       <Hero />
       {/* </div> */}
-      {/* <AnimationDes /> */}
       <About />
+      <Animation />
 
       <Experience />
 

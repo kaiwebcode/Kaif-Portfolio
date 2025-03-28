@@ -8,6 +8,8 @@ import { styles } from "../utills/styles";
 import { projects } from "../utills";
 import SectionWrapper from ".././hoc/SectionWrapper";
 import rocketLaunch from "@/public/assets/rocket-lunch.png"; // ✅ Fixed filename
+import CustomButton from "./CustomButton";
+import Link from "next/link";
 
 // Define TypeScript types
 interface ProjectType {
@@ -36,7 +38,7 @@ const ProjectCard = ({
                 tiltMaxAngleY={45}
                 scale={1}
                 transitionSpeed={450}
-                className="bg-zinc-800 p-4 rounded-2xl sm:w-[360px] w-full"
+                className="bg-zinc-800 p-3 rounded-2xl sm:w-[360px] w-full"
             >
                 <div className="relative w-full h-[230px] reveal-up">
                     <Image
@@ -44,7 +46,7 @@ const ProjectCard = ({
                         alt="project_image"
                         width={400}
                         height={300}
-                        className="w-full h-full object-cover rounded-2xl hover:scale-3d"
+                        className="w-full h-full object-fill rounded-lg hover:scale-3d"
                         unoptimized={image.startsWith("http")} // ✅ Fix for external images
                     />
                 </div>
@@ -79,6 +81,7 @@ const ProjectCard = ({
                             className="object-contain filter invert brightness-0"
                         />
                     </div>
+                        {/* <p className="mt-5">Live</p> */}
                 </div>
 
                 <div className="mt-2 flex flex-wrap gap-2">
@@ -117,7 +120,11 @@ const Works = () => {
                 {projects.map((project, index) => (
                     <ProjectCard key={`project-${index}`} index={index} {...project} />
                 ))}
+                <Link href='/projects' className="mx-auto">
+                <CustomButton text="View More Projects" />
+                </Link>
             </div>
+
         </>
     );
 };
