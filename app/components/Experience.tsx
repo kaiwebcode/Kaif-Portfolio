@@ -32,7 +32,7 @@ const ExperienceCard = ({ experience }: { experience: ExperienceType }) => {
             date={experience.date}
             iconStyle={{ background: experience.iconBg }}
             icon={
-                <div className='flex justify-center items-center w-full h-full'>
+                <div className='flex justify-center items-center w-full h-full '>
                     <Image
                         src={experience.icon.startsWith("/") ? experience.icon : `/assets/${experience.icon}`}
                         alt={experience.company_name}
@@ -64,7 +64,7 @@ const ExperienceCard = ({ experience }: { experience: ExperienceType }) => {
 const Experience = () => {
     return (
         <>
-            <motion.div variants={textVariant(0.1)}>
+            <motion.div variants={textVariant(0.1)} className="reveal-up">
                 <p className={`${styles.sectionSubText} text-center`}>
                     What I have done so far
                 </p>
