@@ -99,7 +99,7 @@ const Contact = () => {
                             href="https://www.github.com/kaiwebcode"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="black-gradient w-14 h-14 rounded-full flex justify-center items-center cursor-pointer border hover:bg-zinc-700 hover:text-black"
+                            className="black-gradient w-14 h-12 lg:w-14 lg:h-14 rounded-full flex justify-center items-center cursor-pointer border hover:bg-zinc-700 hover:text-black"
                         >
                             <Image src={github} alt="GitHub" width={35} height={35} className="object-contain" />
                         </Link>
@@ -107,14 +107,14 @@ const Contact = () => {
                         {/* Email */}
                         <Link
                             href="mailto:kaifqureshi.pr@gmail.com"
-                            className="black-gradient w-14 h-14 rounded-full text-white flex justify-center items-center cursor-pointer border hover:bg-zinc-700 hover:text-black"
+                            className="black-gradient w-14 h-12 lg:w-14 lg:h-14 rounded-full text-white flex justify-center items-center cursor-pointer border hover:bg-zinc-700 hover:text-black"
                         >
                             <Image src={Email} alt="Email" width={35} height={35} className="object-contain" />
                         </Link>
 
                         <Link
                             href="https://www.instagram.com/Kaif.__q"
-                            className="black-gradient w-14 h-14 rounded-full text-white flex justify-center items-center cursor-pointer border hover:bg-zinc-700 hover:text-black"
+                            className="black-gradient w-12 h-12 lg:w-14 lg:h-14 rounded-full text-white flex justify-center items-center cursor-pointer border hover:bg-zinc-700 hover:text-black"
                         >
                             <Image src={instagram} alt="instagram" width={35} height={35} className="object-contain" />
                         </Link>
@@ -124,7 +124,7 @@ const Contact = () => {
                             href="https://www.linkedin.com/in/kaif-qureshi-06b5782a7"
                             target="_blank"
                             rel="noopener noreferrer"
-                            className="black-gradient w-14 h-14 rounded-full flex justify-center items-center cursor-pointer border hover:bg-zinc-700 hover:text-black"
+                            className="black-gradient w-14 h-12 lg:w-14 lg:h-14 rounded-full flex justify-center items-center cursor-pointer border hover:bg-zinc-700 hover:text-black"
                         >
                             <Image src={linkedin} alt="LinkedIn" width={35} height={35} className="object-contain" />
                         </Link>
