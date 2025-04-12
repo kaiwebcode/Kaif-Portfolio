@@ -35,10 +35,10 @@ const ExperienceCard = ({ experience }: { experience: ExperienceType }) => {
                 <div className='flex justify-center items-center w-full h-full '>
                     <Image
                         src={experience.icon.startsWith("/") ? experience.icon : `/assets/${experience.icon}`}
-                        alt={experience.company_name}
-                        width={60} // Adjust size as needed
-                        height={60} // Adjust size as needed
-                        className='w-[60%] h-[60%] object-contain text-white'
+                        alt={experience.title}
+                        width={70} // Adjust size as needed
+                        height={70} // Adjust size as needed
+                        className='w-[70%] h-[70%] object-contain text-white'
                     />
                 </div>
             }
@@ -75,7 +75,7 @@ const Experience = () => {
 
             <div className='mt-10 flex flex-col'>
                 <VerticalTimeline>
-                    {experiences.map((experience: ExperienceType, index: number) => (
+                    {experiences.map((experience, index: number) => (
                         <ExperienceCard key={`experience-${index}`} experience={experience} />
                     ))}
                 </VerticalTimeline>

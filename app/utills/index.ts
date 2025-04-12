@@ -118,9 +118,9 @@ const experiences = [
   {
     title: "React.js Developer",
     company_name: "Starbucks",
-    icon: "/assets/starbucks.png", // ✅ FIXED
+    icon: "/assets/reactjs.png", // ✅ FIXED
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "March 2024 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -129,11 +129,11 @@ const experiences = [
     ],
   },
   {
-    title: "React Native Developer",
+    title: "TypeScript Developer",
     company_name: "Tesla",
-    icon: "/assets/tesla.png", // ✅ FIXED
+    icon: "/assets/typescript.png", // ✅ FIXED
     iconBg: "#E6DEDD",
-    date: "Jan 2021 - Feb 2022",
+    date: "Jan 2024 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -144,9 +144,9 @@ const experiences = [
   {
     title: "Web Developer",
     company_name: "Shopify",
-    icon: "/assets/shopify.png", // ✅ FIXED
+    icon: "/assets/coder.svg", // ✅ FIXED
     iconBg: "#383E56",
-    date: "Jan 2022 - Jan 2023",
+    date: "Jan 2024 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -155,11 +155,11 @@ const experiences = [
     ],
   },
   {
-    title: "Full stack Developer",
+    title: "Javascript Developer",
     company_name: "Meta",
-    icon: "/assets/meta.png", // ✅ FIXED
+    icon: "/assets/javascript.png", // ✅ FIXED
     iconBg: "#E6DEDD",
-    date: "Jan 2023 - Present",
+    date: "Jan 2024 - Present",
     points: [
       "Developing and maintaining web applications using React.js and other related technologies.",
       "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
@@ -169,110 +169,104 @@ const experiences = [
   },
 ];
 
-  const testimonials = [
-    {
-      testimonial:
-        "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-      name: "Sara Lee",
-      designation: "CFO",
-      company: "Acme Co",
-      image: "https://randomuser.me/api/portraits/women/4.jpg",
-    },
-    {
-      testimonial:
-        "I've never met a web developer who truly cares about their clients' success like Rick does.",
-      name: "Chris Brown",
-      designation: "COO",
-      company: "DEF Corp",
-      image: "https://randomuser.me/api/portraits/men/5.jpg",
-    },
-    {
-      testimonial:
-        "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-      name: "Lisa Wang",
-      designation: "CTO",
-      company: "456 Enterprises",
-      image: "https://randomuser.me/api/portraits/women/6.jpg",
-    },
-  ];
+const testimonials = [
+  {
+    testimonial:
+      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
+    name: "Sara Lee",
+    designation: "CFO",
+    company: "Acme Co",
+    image: "https://randomuser.me/api/portraits/women/4.jpg",
+  },
+  {
+    testimonial:
+      "I've never met a web developer who truly cares about their clients' success like Rick does.",
+    name: "Chris Brown",
+    designation: "COO",
+    company: "DEF Corp",
+    image: "https://randomuser.me/api/portraits/men/5.jpg",
+  },
+  {
+    testimonial:
+      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
+    name: "Lisa Wang",
+    designation: "CTO",
+    company: "456 Enterprises",
+    image: "https://randomuser.me/api/portraits/women/6.jpg",
+  },
+];
 
-  const projects = [
-    {
-      name: "Car Rent",
-      description:
-        "Web-based platform that allows users to search, book, and manage car rentals from various providers, providing a convenient and efficient solution for transportation needs.",
-      tags: [
-        {
-          name: "react",
-          color: "text-blue-500",
-        },
-        {
-          name: "mongodb",
-          color: "text-green-500",
-        },
-        {
-          name: "tailwind",
-          color: "text-pink-500",
-        },
-      ],
-      image: "/assets/Screenshot 2024-10-12 215151.png",
-      source_code_link: "https://github.com/kaiwebcode/Kai-Ecommerce-Shoees",
-      projects_link: "https://kai-ecommerce-shoees.vercel.app",
-    },
-    {
-      name: "Job IT",
-      description:
-        "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
-      tags: [
-        {
-          name: "Next.js",
-          color:"text-blue-500",
-        },
-        {
-          name: "TypeScript",
-          color: "text-green-500",
-        },
-        {
-          name: "Tailwind css",
-          color: "text-pink-500",
-        },
-        {
-          name: "Convex",
-          color: "text-purple-500",
-        },
-      ],
-      image: "/assets/Ero.io-thumbnail.png",
-      source_code_link: "https://github.com/kaiwebcode/Ero.io",
-      projects_link: "https://ero-io-kai.vercel.app",
-    },
-    {
-      name: "Trip Guide",
-      description:
-        "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
-      tags: [
-        {
-          name: "nextjs",
-          color: "text-blue-500",
-        },
-        {
-          name: "supabase",
-          color: "text-green-500",
-        },
-        {
-          name: "css",
-          color: "text-pink-500",
-        },
-      ],
-      image: "/assets/Screenshot 2025-03-28 152340.png",
-      source_code_link: "https://github.com/kaiwebcode/Kai-E-learning-Management",
-      projects_link: "https://kai-e-learning-management.vercel.app",
-    },
-  ];
+const projects = [
+  {
+    name: "Kai-Shoes",
+    description:
+      "Kai Ecommerce Shoees is a modern e-commerce platform for customers to buy stylish shoes and for admins to manage the store’s users, products, and sales.",
+    tags: [
+      {
+        name: "react",
+        color: "text-blue-500",
+      },
+      {
+        name: "mongodb",
+        color: "text-green-500",
+      },
+      {
+        name: "tailwind",
+        color: "text-pink-500",
+      },
+    ],
+    image: "/assets/Screenshot 2024-10-12 215151.png",
+    source_code_link: "https://github.com/kaiwebcode/Kai-Ecommerce-Shoees",
+    projects_link: "https://kai-ecommerce-shoees.vercel.app",
+  },
+  {
+    name: "Ero.io",
+    description:
+      "Ero.io is a feature-rich, collaborative web-based drawing application designed for seamless user experiences. Built with cutting-edge technologies, it empowers users.",
+    tags: [
+      {
+        name: "Next.js",
+        color: "text-blue-500",
+      },
+      {
+        name: "TypeScript",
+        color: "text-green-500",
+      },
+      {
+        name: "Tailwind css",
+        color: "text-pink-500",
+      },
+      {
+        name: "Convex",
+        color: "text-purple-500",
+      },
+    ],
+    image: "/assets/Ero.io-thumbnail.png",
+    source_code_link: "https://github.com/kaiwebcode/Ero.io",
+    projects_link: "https://ero-io-kai.vercel.app",
+  },
+  {
+    name: "Kai-Elearning",
+    description:
+      "Kai-Elearning is a modern, feature ELearning Management System (LMS) designed for seamless online education, it provides an all-in-one solution for students, teachers, and administrators.",
+    tags: [
+      {
+        name: "nextjs",
+        color: "text-blue-500",
+      },
+      {
+        name: "supabase",
+        color: "text-green-500",
+      },
+      {
+        name: "css",
+        color: "text-pink-500",
+      },
+    ],
+    image: "/assets/Screenshot 2025-03-28 152340.png",
+    source_code_link: "https://github.com/kaiwebcode/Kai-E-learning-Management",
+    projects_link: "https://kai-e-learning-management.vercel.app",
+  },
+];
 
-export {
-  services,
-  technologies,
-  experiences,
-    testimonials,
-     projects
-};
+export { services, technologies, experiences, testimonials, projects };

@@ -38,59 +38,62 @@ const ProjectCard = ({
                 tiltMaxAngleY={45}
                 scale={1}
                 transitionSpeed={450}
-                className="bg-zinc-800 p-3 rounded-2xl sm:w-[360px] w-full"
+                className="bg-zinc-800 rounded-2xl sm:w-[360px] w-full shadow-2xl hover:shadow-2xl hover:shadow-sky-800 transition-shadow"
             >
-                <div className="relative w-full h-[230px] reveal-up">
+                <div className="relative w-full h-[230px] reveal-up ">
                     <Image
                         src={image}
                         alt="project_image"
                         width={400}
                         height={300}
-                        className="w-full h-full object-fill rounded-lg hover:scale-3d"
+                        className="w-full h-full object-fill rounded-lg hover:scale-3d "
                         unoptimized={image.startsWith("http")} // ✅ Fix for external images
                     />
                 </div>
 
-                <div className="mt-5">
+            <div className="p-3">
+
+                <div className="mt-2">
                     <h3 className="text-white font-bold text-[24px]">{name}</h3>
                     <p className="mt-2 text-secondary text-[14px]">{description}</p>
                 </div>
 
-                <div className="flex gap-2">
+                <div className="flex gap-2 mb-2">
                     <div
                         onClick={() => window.open(source_code_link, "_blank")}
                         className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border mt-3 hover:bg-black "
-                    >
+                        >
                         <Image
                             src={github}
                             alt="source code"
                             width={20}
                             height={20}
                             className="object-contain"
-                        />
+                            />
                     </div>
                     <div
                         onClick={() => window.open(projects_link, "_blank")}
                         className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border mt-3 hover:bg-black"
-                    >
+                        >
                         <Image
                             src={rocketLaunch}
                             alt="project link"
                             width={20}
                             height={20}
                             className="object-contain filter invert brightness-0"
-                        />
+                            />
                     </div>
                         {/* <p className="mt-5">Live</p> */}
                 </div>
 
-                <div className="mt-2 flex flex-wrap gap-2">
+                <div className=" flex flex-wrap gap-2">
                     {tags.map((tag) => (
                         <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
                             #{tag.name}
                         </p>
                     ))}
                 </div>
+                    </div>
             </Tilt>
         </motion.div>
     );
@@ -120,7 +123,7 @@ const Works = () => {
                 {projects.map((project, index) => (
                     <ProjectCard key={`project-${index}`} index={index} {...project} />
                 ))}
-                <Link href='/projects' className="mx-auto">
+                <Link href='/projects' className="mx-auto mt-10">
                 <CustomButton text="View More Projects" />
                 </Link>
             </div>
