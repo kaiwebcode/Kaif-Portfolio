@@ -21,15 +21,13 @@ function Animation() {
         transition={{ type: "tween", ease: "backOut", duration: 0.5 }}
       >
         <p onMouseEnter={() => setIsHovered(true)} onMouseLeave={() => setIsHovered(false)}>
-          A visual designer - with skills that haven&apos;t been replaced by A.I (yet) - making good
-          shit only if the paycheck is equally good.
+          I am a dedicated selectively skilled  with a strong proficiency in the MERN stack, specializing in TypeScript, JavaScript, React, Node.js, and MongoDB. As a college student, I am continuously advancing my skills while building dynamic web applications that are efficient.
         </p>
       </motion.div>
 
       <div className={styles.body}>
         <p>
-          I&apos;m a <span>selectively skilled</span> product designer with a strong focus on
-          producing high-quality & impactful digital experiences.
+          I&apos;m a <span>Full Stack Developer</span> Passionate about coding and problem-solving, I thrive in collaborative environments where I can contribute and learn from others. I am eager to take on new challenges, further sharpen my skills, and bring innovative ideas to life.
         </p>
       </div>
     </main>

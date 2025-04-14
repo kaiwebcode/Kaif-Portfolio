@@ -42,7 +42,7 @@ const ServiceCard: React.FC<ServiceCardProps> = ({ index, title, icon }) => {
 
 const About = () => {
   return (
-    <div className="py-20 text-white text-center reveal-up">
+    <div className="pb-20 pt-10 text-white text-center reveal-up">
       <motion.div variants={textVariant(0)}>
         <p className={styles.sectionSubText}>Introduction</p>
         <h2 className={styles.sectionHeadText}>Overview.</h2>

@@ -25,7 +25,7 @@ function Header() {
                 <div className="max-w-screen-2xl w-full mx-auto flex justify-between items-center">
                     {/* Logo */}
                     <h1 className="font-bold text-white">
-                        <Link href="/" className="lg:text-5xl text-4xl tracking-wide">KAIF.</Link>
+                        <Link href="/" className="lg:text-4xl text-3xl tracking-wide">KAIF.</Link>
                     </h1>
 
                     {/* Desktop Navigation */}

@@ -16,14 +16,14 @@
     align-items: center;
     justify-content: center;
     color: #afa18f;
-    font-size: clamp(24px, 5vw, 64px);
-    font-weight: 600;
+    font-size: 3rem;
+    font-weight: 700;
     line-height: 1.2;
     cursor: default;
 
     p {
       // width: 900px;
-      width: 70%;
+      width: 80%;
       padding: 40px;
     }
     span {

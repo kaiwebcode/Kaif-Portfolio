@@ -46,7 +46,8 @@ function Hero() {
               Available for work
             </div>
           </div>
-          <h1 ref={textRef} className="mt-6 text-3xl font-extrabold leading-tight md:text-5xl lg:text-6xl">
+          <h1 ref={textRef} className="mt-6 text-3xl font-extrabold leading-tight md:text-4xl lg:text-4xl">
+            <span className="block text-white">Hi I&apos;m Kaif</span>
             <span className="block text-white">Building Scalable</span>
             <span className="block text-white">Modern Websites for the Future</span>
           </h1>
@@ -67,8 +68,8 @@ function Hero() {
 
           {/* Animated Scroll Indicator */}
           <div className="absolute xs:bottom-10 bottom-24 flex justify-center items-center ">
-            <a href="#about" onClick={scrollToAbout}>
-              <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
+            <a href="#about" onClick={scrollToAbout} className="">
+              <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2 shadow-xl shadow-sky-600">
                 <motion.div
                   animate={{ y: [0, 24, 0] }}
                   transition={{ duration: 1.5, repeat: Infinity, repeatType: "loop" }}

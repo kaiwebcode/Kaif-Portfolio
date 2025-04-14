@@ -34,66 +34,61 @@ const ProjectCard = ({
     return (
         <motion.div variants={fadeIn("up", "spring", index * 0.5, 0.75)}>
             <Tilt
-                tiltMaxAngleX={45}
-                tiltMaxAngleY={45}
-                scale={1}
-                transitionSpeed={450}
-                className="bg-zinc-800 rounded-2xl sm:w-[360px] w-full shadow-2xl hover:shadow-2xl hover:shadow-sky-800 transition-shadow"
+                tiltMaxAngleX={30}
+                tiltMaxAngleY={30}
+                scale={1.05}
+                transitionSpeed={400}
+                className="bg-zinc-800 rounded-2xl sm:w-[360px] w-full shadow-sm hover:shadow-xl hover:shadow-sky-600 transition-all duration-300 reveal-up"
             >
-                <div className="relative w-full h-[230px] reveal-up ">
+                <div className="relative w-full h-[230px] overflow-hidden rounded-t-2xl">
                     <Image
                         src={image}
                         alt="project_image"
                         width={400}
                         height={300}
-                        className="w-full h-full object-fill rounded-lg hover:scale-3d "
-                        unoptimized={image.startsWith("http")} // ✅ Fix for external images
+                        className="w-full h-full object-center transition-transform duration-500 hover:scale-105"
+                        unoptimized={image.startsWith("http")}
                     />
                 </div>
 
-            <div className="p-3">
+                <div className="p-5 space-y-3">
+                    <div>
+                        <h3 className="text-white font-semibold text-[24px]">{name}</h3>
+                        <p className="mt-1 text-gray-400 text-[14px] leading-relaxed">{description}</p>
+                    </div>
 
-                <div className="mt-2">
-                    <h3 className="text-white font-bold text-[24px]">{name}</h3>
-                    <p className="mt-2 text-secondary text-[14px]">{description}</p>
-                </div>
-
-                <div className="flex gap-2 mb-2">
-                    <div
-                        onClick={() => window.open(source_code_link, "_blank")}
-                        className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border mt-3 hover:bg-black "
+                    <div className="flex gap-3">
+                        <button
+                            onClick={() => window.open(source_code_link, "_blank")}
+                            className="bg-black border cursor-pointer border-gray-700 hover:bg-gray-900 transition p-2 rounded-full flex items-center justify-center w-10 h-10"
                         >
-                        <Image
-                            src={github}
-                            alt="source code"
-                            width={20}
-                            height={20}
-                            className="object-contain"
-                            />
-                    </div>
-                    <div
-                        onClick={() => window.open(projects_link, "_blank")}
-                        className="black-gradient w-10 h-10 rounded-full flex justify-center items-center cursor-pointer border mt-3 hover:bg-black"
+                            <Image src={github} alt="source code" width={20} height={20} />
+                        </button>
+                        <button
+                            onClick={() => window.open(projects_link, "_blank")}
+                            className="bg-black border cursor-pointer border-gray-700 hover:bg-gray-900 transition p-2 rounded-full flex items-center justify-center w-10 h-10"
                         >
-                        <Image
-                            src={rocketLaunch}
-                            alt="project link"
-                            width={20}
-                            height={20}
-                            className="object-contain filter invert brightness-0"
+                            <Image
+                                src={rocketLaunch}
+                                alt="project link"
+                                width={20}
+                                height={20}
+                                className="object-contain filter invert brightness-0"
                             />
+                        </button>
                     </div>
-                        {/* <p className="mt-5">Live</p> */}
-                </div>
 
-                <div className=" flex flex-wrap gap-2">
-                    {tags.map((tag) => (
-                        <p key={`${name}-${tag.name}`} className={`text-[14px] ${tag.color}`}>
-                            #{tag.name}
-                        </p>
-                    ))}
-                </div>
+                    <div className="flex flex-wrap gap-2">
+                        {tags.map((tag) => (
+                            <span
+                                key={`${name}-${tag.name}`}
+                                className={`text-[13px] font-medium ${tag.color}`}
+                            >
+                                #{tag.name}
+                            </span>
+                        ))}
                     </div>
+                </div>
             </Tilt>
         </motion.div>
     );

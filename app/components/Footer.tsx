@@ -19,17 +19,17 @@ const Footer = ({}: Props) => {
                         <h3 className="text-[28px] font-[700] text-white">Quick Links</h3>
                         <ul className="space-y-4">
                             <li>
-                                <Link href="/courses" className="text-base text-white dark:text-gray-300 dark:hover:text-white">
+                                <Link href="#about" className="text-base text-white dark:text-gray-300 dark:hover:text-white">
                                     About
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/profile" className="text-base text-white dark:text-gray-300 dark:hover:text-white">
+                                <Link href="#skills" className="text-base text-white dark:text-gray-300 dark:hover:text-white">
                                     Skills
                                 </Link>
                             </li>
                             <li>
-                                <Link href="/profile" className="text-base text-white dark:text-gray-300 dark:hover:text-white">
+                                <Link href="#projects" className="text-base text-white dark:text-gray-300 dark:hover:text-white">
                                     Projects
                                 </Link>
                             </li>
