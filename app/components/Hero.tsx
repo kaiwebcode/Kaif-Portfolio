@@ -47,7 +47,7 @@ function Hero() {
             </div>
           </div>
           <h1 ref={textRef} className="mt-6 text-3xl font-extrabold leading-tight md:text-4xl lg:text-4xl">
-            <span className="block text-white">Hi I&apos;m Kaif</span>
+            <span className="block text-white">Hi I&apos;m Kai</span>
             <span className="block text-white">Building Scalable</span>
             <span className="block text-white">Modern Websites for the Future</span>
           </h1>

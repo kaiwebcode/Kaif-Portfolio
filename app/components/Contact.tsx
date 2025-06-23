@@ -87,9 +87,9 @@ const Contact = () => {
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1 }}
             >
-                <h2 className={styles.heroSubText}>Contact me for collaboration</h2>
+                <h2 className="font-bold text-3xl text-slate-600">Contact me for collaboration</h2>
 
-                <p>
+                <p className="text-gray-200">
                     Reach out today to discuss your project needs and start collabrating on something amazing!
                 </p>
 
